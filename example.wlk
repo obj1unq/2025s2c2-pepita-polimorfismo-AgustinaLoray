@@ -58,3 +58,26 @@ method comer(comida) {
 }
 
 }
+
+object roque {
+	var ave = pepita
+	var vecesQueAlimenteAMiAve = 0
+
+	method cualEsMiAve() {
+	  return ave
+	}
+	method tuAveEs(_ave) {
+		ave = _ave   
+	}
+	method alimentar(comida) {
+		ave.comer(comida) 
+	  	vecesQueAlimenteAMiAve = vecesQueAlimenteAMiAve + 1	
+	}
+
+	method cenas() {
+		return vecesQueAlimenteAMiAve
+	  
+	}
+
+}
+

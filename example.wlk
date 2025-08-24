@@ -68,6 +68,7 @@ object roque {
 	}
 	method tuAveEs(_ave) {
 		ave = _ave   
+		vecesQueAlimenteAMiAve = 0 
 	}
 	method alimentar(comida) {
 		ave.comer(comida) 
